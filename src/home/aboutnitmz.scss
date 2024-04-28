@@ -1,0 +1,132 @@
+.about-insti-page-container {
+    height: auto;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(to right, rgb(236, 202, 89), rgb(72, 236, 57));
+    margin-top: -10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.v-shape {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 8vh;
+    background-color: #e8ecf4;
+    clip-path: polygon(0 0, 50% 100%, 100% 0);
+}
+
+.about-insti-page-container h4{
+    font-weight: 700;
+    text-align: center;
+}
+
+.about-insti-title {
+    margin-top: 10vh;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.insti-details-container {
+    height: auto;
+    display: flex;
+    padding: 20px;
+    margin-top: 15vh;
+}
+
+.about-nit-mz-text {
+    width: 50%;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    font-size: 1.1rem;
+}
+
+.insti-details-right-container {
+    height: auto;
+    width: 40%;
+    // display: flex;
+    margin: 0 auto 0 auto;
+    // background-color: aqua;
+    // align-items: center;
+    // justify-content: center;
+}
+
+.insti-details-right-container::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.nitmz-pic-1 {
+    height: 40vh;
+    min-width: 20vw;
+    object-fit: cover;
+    border: 8px solid #fff;
+    border-radius: 10px;
+    z-index: 3;
+    position: absolute;
+    right: 100px;
+    bottom: 180px;
+    outline: 2px solid rgb(247, 195, 26);
+}
+
+.nitmz-pic-2 {
+    height: 40vh;
+    min-width: 25vw;
+    object-fit: cover;
+    border: 8px solid #fff;
+    border-radius: 10px;
+    z-index: 2;
+    position: relative;
+    outline: 2px solid rgb(247, 195, 26);
+}
+
+@media (max-width: 1200px) {
+    .insti-details-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .about-nit-mz-text {
+        width: 90%;
+        margin: 0 auto 0 auto;
+        padding: 0;
+    }
+
+    .insti-details-right-container {
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nitmz-pic-1 {
+        height: 40vh;
+        width: fit-content;
+        object-fit: contain;
+        border: 8px solid #fff;
+        border-radius: 10px;
+        z-index: 3;
+        position: static;
+    }
+
+    .nitmz-pic-2 {
+        height: auto;
+        width: 95vw;
+        object-fit: contain;
+        border: 8px solid #fff;
+        border-radius: 10px;
+        position: static;
+        margin: 10px;
+    }
+}

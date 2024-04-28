@@ -1,0 +1,118 @@
+.navbar-container {
+    display: flex;
+    z-index: 999;
+    height: 10vh;
+    width: 100%;
+    // color: aliceblue;
+    // background: gray;
+    transition: background-color 1s;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: background-color;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    // margin-top: -20px;
+}
+
+.navbar-container-md {
+    position: fixed;
+    display: flex;
+    height: inherit;
+    z-index: 999;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    // background-color: aqua;
+}
+
+.navbar-text {
+    text-decoration: none;
+    color: rgb(255, 254, 254);
+    font-weight: bold;
+    font-family: Roboto;
+}
+
+.navbar-title {
+    // color: aliceblue;
+    font-size: 1.5rem;
+}
+
+.menu-basic-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(40, 167, 167);
+}
+
+.navbar-menu-text{
+    color: aliceblue;
+    font-size: 1.2rem;
+    line-height: inherit;
+    font-family: Roboto;
+    // background-color: antiquewhite;
+}
+
+.scroll {
+    background-color: rgb(252, 252, 252);
+    box-shadow: 0 0 15px 2px #878686;
+    .navbar-text {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+    }
+}
+
+.navbar-title {
+    font-family: Montserrat;
+}
+
+.image-container {
+    // background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 10vw;
+}
+
+.insti-logo {
+    // min-height: 6vh;
+    max-height: 100%;
+    // min-width: 10vw;
+    max-width: 100%;
+
+    // background-color: rgb(158, 101, 27);
+}
+
+.navbar-right-content{
+    max-height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    // background-color: antiquewhite;
+}
+
+
+.navbar-menu-text{
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-menu-title{
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .navbar-container {
+        height: 10vh;
+    }
+    .image-container {
+        // background-color: aquamarine;
+        width: 30vw;
+    }
+    
+  }
